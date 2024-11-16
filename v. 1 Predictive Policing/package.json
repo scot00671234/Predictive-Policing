@@ -1,0 +1,27 @@
+{
+  "name": "predictive-crime-analysis",
+  "version": "1.0.0",
+  "description": "Advanced crime prediction and analysis system",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "client": "cd client && npm run dev",
+    "dev:all": "concurrently \"npm run dev\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "preview": "cd client && npm run preview"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "ml-regression": "^5.0.0",
+    "node-geocoder": "^4.2.0",
+    "@turf/turf": "^6.5.0",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2D3748;
+  --secondary: #4A5568;
+  --accent: #718096;
+}
+
+body {
+  @apply antialiased text-gray-800;
+}
